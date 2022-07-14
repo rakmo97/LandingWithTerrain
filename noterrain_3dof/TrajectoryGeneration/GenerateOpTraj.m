@@ -51,7 +51,7 @@ for i = 1:nTrajs
             conf.g = 9.81; % m/s2
             conf.g0 = 9.81; % m/s2
             conf.r = 1;
-            conf.Isp = 300;
+            conf.Isp = 10;
 
 
 
