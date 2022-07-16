@@ -14,7 +14,7 @@ clc
 run ../../../3DoF_RigidBody/OpenOCL/ocl.m 
 
 %% Generation settings
-nTrajs = 1000; % Number of trajectories to generate
+nTrajs = 2000; % Number of trajectories to generate
 plotting = 1; % Plot things or no?
 saveout = ['d',datestr(now,'yyyymmdd_HHoMMSSFFF'),'_genTrajs','.mat'];
 
