@@ -82,7 +82,7 @@ for i in range(nt-1):
     # print('State: {}'.format(x_policy[i+1,:]))
     # print('State norm: {}'.format(np.linalg.norm(x_policy[i+1,:])))
 
-    if np.linalg.norm(x_policy[i+1,:]) < 1.0:
+    if np.linalg.norm(x_policy[i+1,:]) < 0.001:
         print('Target reached, breaking out of sim')
         break
     # x_policy[i+1,:] = x_ocl[i+1,:]

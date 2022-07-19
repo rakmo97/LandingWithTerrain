@@ -48,7 +48,7 @@ for i = 1:length(datafiles)
 
     d = load(datafiles{i});
     
-    disp(['Extracting datafile ',num2str(i),' of ',num2str(length(datafiles))]);
+    disp(['Extracting datafile ',num2str(i),' of ',num2str(length(datafiles)),': ',datafiles{i}]);
     
     lastidx = find(d.Jout(:,1)==0,1) - 1; % Find last index
     if isempty(lastidx)
@@ -89,7 +89,7 @@ disp(['Full dataset size: ',num2str(count-1)])
 %% Separate into training and testing data
 disp('Separating training and testing data')
 
-num2train = 190000;
+num2train = 700000;
 Xtrain2 = Xfull_2(1:num2train,:);
 ttrain2 = tfull_2(1:num2train,:);
 Xtest2 = Xfull_2(num2train+1:end,:);

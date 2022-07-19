@@ -29,7 +29,7 @@ matfile = loadmat(base_data_folder+formulation+'ANN2_data.mat')
 # Load Policy
 # ============================================================================
 print('Loading Policy')
-filename = base_data_folder+formulation+'NetworkTraining/ANN2_703_tanh_n100.h5'
+filename = base_data_folder+formulation+'NetworkTraining/ANN2_703_tanh_n600.h5'
 policy = models.load_model(filename)
 
 nState    =   7

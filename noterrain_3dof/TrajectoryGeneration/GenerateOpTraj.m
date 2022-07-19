@@ -70,7 +70,7 @@ for i = 1:nTrajs
 
             % Generate Initial Conditions and Target [x,y,phi,dx,dy,dphi,m]
             r = lower+(upper-lower).*rand(7,1);
-            r = [   -2.3620   -3.5446  14.5573    0.7386    0.1594    0.0997    1.0000]';
+            % r = [   -2.3620   -3.5446  14.5573    0.7386    0.1594    0.0997    1.0000]';
 
             % Set Initial Conditions
             solver.setInitialBounds( 'x'   ,   r(1)   );
